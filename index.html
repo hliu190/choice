@@ -37,13 +37,7 @@ var text = ["南京","波士顿"];
 var i=0;
 function wait(){
     //do what you need here
-    
-	if(i==0){
-		i=1;
-	}
-	else if(i==1){
-		i=0;
-	}
+	i=(i+1)%2
 	$("div").text(text[i]);
 	if(keep){
     setTimeout(wait, time);}
